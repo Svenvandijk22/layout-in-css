@@ -5,8 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Layout 9</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-      /* Doe hier jouw ding! */
+   
+   
+   <style>
+    
+
+body{
+display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+
+
+header{
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+}
+
+
+nav{
+   grid-column-start: 2;
+  grid-column-end: -1;
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+
+main{
+
+ grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start:1 ;
+  grid-column-end:-1 ;
+
+}
+
+footer{
+ grid-column-start:1 ;
+  grid-column-end:-1 ;
+
+
+}
+
     </style>
   </head>
   <body id="basic-layout-9">

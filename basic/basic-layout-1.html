@@ -8,8 +8,48 @@
     <style>
       body {
         display: grid;
+         gap: 5px; 
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       
       }
       /* Doe hier jouw ding! */
+      header{ 
+        grid-column-start: 1 ;
+        grid-column-end: -1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      nav{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 8;
+      }
+
+      main{
+        grid-column-start: 2;
+        grid-column-end: -1;
+        grid-row-start: 3;
+        grid-row-end: 8;
+     }
+      
+      
+      footer{
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 8;
+        grid-row-end:-1 ;
+      }
+
+
+
+
+
+
+
+
     </style>
   </head>
   <body id="basic-layout-1">
